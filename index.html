@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h2 class="title">Number Guessing Game</h2>
+      <p class="player-number">
+        Player: <span id="player-number-count">1</span>
+      </p>
+
+      <div id="game-output" class="output">
+        <p class="output-title">Welcome to the Number Guessing Game!</p>
+        <p class="output-subTitle">Try to guess the number between 1 and 10</p>
+
+        <ul id="message-list"></ul>
+      </div>
+
+      <input
+        id="guess-input"
+        class="input"
+        type="number"
+        placeholder="Enter your guess (1-10)"
+      />
+      <p id="error-message"></p>
+      <button onclick="getInputValue()" class="submit-btn">Submit Guess</button>
+    </section>
+
+    <!-- game js -->
+    <script src="game.js"></script>
+  </body>
+</html>
